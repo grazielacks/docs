@@ -138,6 +138,12 @@ $ createdb $USER
 
 [www.sublimetext.com](https://www.sublimetext.com/)
 
+#### OS
+Para criar o comando para o terminal
+```sh
+$ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+```
+
 [Settings](sublime_text)
 
 ## Git
