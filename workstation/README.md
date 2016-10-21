@@ -158,6 +158,14 @@ Package Control - ctrl+shift+p (Win, Linux) ou cmd+shift+p (OS X). Install Packa
 * **BracketHighlighter:** Este é para destacar a abertura e fechamento de tags, chaves, parênteses, etc.
 * **ColorPicker:** Este é bem legal, abre uma paleta de cores. No linux e windows para utilizar pressione ctrl+shift+c no MacOS cmd+shift+c.
 * **jslint:** Controle de qualidade de código para o javascript.
+* **DetectSyntax:** Detecta a sintaxe de arquivos como Gemfile, Capfile, etc. Também detecta arquivos do RSpec.
+* **ColorHighlighter:** Ele inspeciona os valores de cores hexadecimais selecionados.
+* **Sass:** Suporte ao Sass.
+* **CSS3:** Esse plugin serve para manter uma boa organização no CSS.
+* **JavaScriptNext:** Este é um pacote de sintaxe melhorada para JavaScript. Inclui novos recursos de ECMAScript 6.
+* **PHPCS:** Mantem o padrão no código PHP.
+* **Aligntab:** Ajuda a organizar os códigos, mantendo a padronização na identação.
+* **FileDiffs:** Mostra as diferenças entre arquivos.
 
 ## Git
 
@@ -184,7 +192,7 @@ $ git config --global alias.dump 'cat-file -p'
 $ git config --global push.default simple
 ```
 
-[gitignore](gitignore)
+[gitignore](gitignore.txt)
 
 ## SSH
 
