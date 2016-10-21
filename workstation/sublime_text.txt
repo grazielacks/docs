@@ -12,10 +12,7 @@
   // Tamanho de fonte 13, para uma leitura extremamente confortável.
   "font_size": 13,
   
-  // Exibir coluna do numero de linhas
-  "gutter": true,
-  
-	// Margem entre coluna do numero de linhas e o conteúdo.
+  // Margem entre coluna do numero de linhas e o conteúdo.
   "margin": 0,  
   
   // Faz o highlighting da linha com o cursor.
@@ -48,7 +45,7 @@
   "bold_folder_labels": true,
   
   // Desabilita o drag ‘n’ drop de seleções de texto.
-  "drag_text", 
+  "drag_text": false, 
   
   // Exibe caracteres em branco.
   "draw_white_space": "all",
