@@ -148,6 +148,17 @@ $ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/lo
 
 [Settings](sublime_text.txt)
 
+#### Pacotes
+Package Control - ctrl+shift+p (Win, Linux) ou cmd+shift+p (OS X). Install Package.
+
+* **SideBarEnhancements:**  O sidebar do Sublime é simples, com este pacote você libera uma infinidade de opções como: abrir, apagar, renomear, copiar, colar, procurar em arquivo, move, atualizar, etc.
+* **OpenFolder:** Este pacote adiciona a possibildade de abrir uma pasta a partir do sidebar, você dá com o botão direito em cima da pasta escolhe Open  Folder e a pasta é aberta.
+* **HTML5:** Suporte ao HTML5.
+* **HTMLAttibutes:** Suporte para os atributos em HTML para completar de maneira automática.
+* **BracketHighlighter:** Este é para destacar a abertura e fechamento de tags, chaves, parênteses, etc.
+* **ColorPicker:** Este é bem legal, abre uma paleta de cores. No linux e windows para utilizar pressione ctrl+shift+c no MacOS cmd+shift+c.
+* **jslint:** Controle de qualidade de código para o javascript.
+
 ## Git
 
 ```sh
