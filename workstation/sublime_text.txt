@@ -1,0 +1,67 @@
+{
+  // Altera a tecla que faz o autocomplete para tab.
+  "auto_complete_commit_on_tab": true,
+  "auto_complete_with_fields": true,
+
+  // Adiciona linha em branco ao final do arquivo.
+  "ensure_newline_at_eof_on_save": true,
+
+  // Usa a fonte Menlo.
+  //"font_face": "Menlo",
+
+  // Tamanho de fonte 13, para uma leitura extremamente confortável.
+  "font_size": 13,
+  
+  // Exibir coluna do numero de linhas
+  "gutter": true,
+  
+	// Margem entre coluna do numero de linhas e o conteúdo.
+  "margin": 0,  
+  
+  // Faz o highlighting da linha com o cursor.
+  "highlight_line": true,
+  
+  // Marca as abas modificadas de modo diferente.
+  "highlight_modified_tabs": true,
+  
+  // Esconde o mapa do arquivo.
+  "new_window_settings": {
+    "show_minimap": false
+  },
+   
+  // Exibe uma guia na coluna 80.
+  "rulers": [80],
+  
+  // Exibe o caminho completo do arquivo que está sendo editado.
+  "show_full_path": true,
+  
+  // Converte tab em espaços.
+  "translate_tabs_to_spaces": true, 
+  
+  // Remove whitespaces quando o arquivo é salvo.
+  "trim_trailing_white_space_on_save": true, 
+  
+  // Define a indentação com tamanho 2.
+  "tab_size": 2,
+  
+  // Deixa diretórios com bold na sidebar.
+  "bold_folder_labels": true,
+  
+  // Desabilita o drag ‘n’ drop de seleções de texto.
+  "drag_text", 
+  
+  // Exibe caracteres em branco.
+  "draw_white_space": "all",
+  
+  // Ao salvar o arquivo adiciona uma linha em branco no final do arquivo caso não exista.
+  "ensure_newline_at_eof_on_save": true,
+    
+  // Ao reabrir o editor não vai manter o que estava aberto anteriormente.
+  "hot_exit": false,
+ 
+  // Inicia o editor em tela cheia caso foi fechado assim.
+  "remember_full_screen": true,
+  
+  // Desabilita o preview do arquivo.
+  "preview_on_click": false  
+}
