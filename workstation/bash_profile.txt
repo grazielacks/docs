@@ -1,3 +1,8 @@
+# Adiciona suporte ao bash git completion - Mac OS
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
 # Coloca o branch na linha de comando e colore.
 export PS1='\w$(__git_ps1 " \[\033[0;31m\](%s)\[\033[0m\]") \$ '
 
