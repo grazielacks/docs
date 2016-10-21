@@ -71,8 +71,8 @@ $ sudo apt-get install php7.0 php7.0-mysql php7.0-pgsql
 
 ```sh
 $ brew install mysql
-$ ln -sfv /usr/local/opt/mysql/*plist ~/Library/LaunchAgents
-$ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+$ brew services start mysql
+$ mysql -u root
 ```
 
 #### Ubuntu
@@ -88,8 +88,9 @@ $ sudo apt-get install mysql-server mysql-client libmysqlclient-dev
 ```sh
 $ brew update
 $ brew install postgres
-$ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-$ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+$ brew services start postgresql
+$ createdb `whoami`
+$ psql
 ```
 
 #### Ubuntu
@@ -145,7 +146,7 @@ Para criar o comando para o terminal
 $ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 ```
 
-[Settings](sublime_text)
+[Settings](sublime_text.txt)
 
 ## Git
 
@@ -185,8 +186,7 @@ Copie a chave gerada e coloque onde for usar, [github](http://github.com/), [bit
 
 ## Arquivos
 
-[bash_profile](bash_profile)
+[bash_profile](bash_profile.txt)
 
 ## Outros
 
-[bash_git_completion](http://stackoverflow.com/questions/12399002/how-to-configure-git-bash-command-line-completion)
