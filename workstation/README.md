@@ -203,6 +203,15 @@ $ cat ~/.ssh/id_rsa.pub
 
 Copie a chave gerada e coloque onde for usar, [github](http://github.com/), [bitbucket](http://bitbucket.com/), etc.
 
+## Redis
+
+### OS
+
+```sh
+$ brew install redis
+$ brew services start redis
+```
+
 ## Arquivos
 
 [bash_profile](bash_profile.txt)
