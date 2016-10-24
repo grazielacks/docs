@@ -60,5 +60,8 @@
   "remember_full_screen": true,
   
   // Desabilita o preview do arquivo.
-  "preview_on_click": false  
+  "preview_on_click": false,
+  
+  // Adiciona rolagem horizontal, não quebra a linha quando for muito grande.
+  "word_wrap": false
 }
