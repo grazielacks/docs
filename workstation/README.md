@@ -43,7 +43,7 @@ or Wget:
 $ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
 ```
 
-## PHP
+## PHP + Apache
 
 ### OS
 
@@ -51,8 +51,46 @@ $ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh 
 $ brew tap homebrew/dupes
 $ brew tap homebrew/versions
 $ brew tap homebrew/homebrew-php
-$ brew unlink php56
-$ brew install php70
+$ brew tap homebrew/apache
+$ brew update
+$ brew install httpd24 --with-privileged-ports --with-http2
+$ brew services start homebrew/apache/httpd24
+$ mkdir ~/Projetos/php/www
+$ subl /usr/local/etc/apache2/2.4/httpd.conf
+
+DocumentRoot /Users/elton/Projetos/php/www
+<Directory /Users/elton/Projetos/php/www>
+AllowOverride All
+
+Descomente o modulo mod_rewrite.so
+LoadModule rewrite_module libexec/mod_rewrite.so
+
+Coloque seu usuário
+User elton
+Group staff
+
+ServerName localhost:80
+
+$ cd ~/Projetos/php/www
+$ echo "<h1>My User Web Root</h1>" > index.html
+$ sudo apachectl -k restart
+$ brew install php70 --with-apache
+$ brew services start homebrew/php/php70
+$ subl /usr/local/etc/apache2/2.4/httpd.conf
+
+LoadModule php7_module /usr/local/opt/php70/libexec/apache2/libphp7.so
+
+<IfModule dir_module>
+    DirectoryIndex index.php index.html
+</IfModule>
+
+<FilesMatch \.php$>
+    SetHandler application/x-httpd-php
+</FilesMatch>
+
+$ cd ~/Projetos/php/www
+$ echo "<?php phpinfo();" > info.php
+$ sudo apachectl -k restart
 ```
 
 ### Ubuntu
