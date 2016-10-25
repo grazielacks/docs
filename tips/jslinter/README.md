@@ -29,7 +29,7 @@ Tendo já o arquivo, basta você rodar no terminal em cima do arquivo desejado e
 $ eslint nome_do_arquivo_desejado.js
 ```
 
-# Integrando o eslint no Sublime
+## Integrando o eslint no Sublime
 
 Com o Package Control instalado, instale os seguintes packages:
 
