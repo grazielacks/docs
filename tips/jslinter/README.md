@@ -1,4 +1,4 @@
-# Analisando seu código JS com um linter
+# Analisando seu código JS com ESlinter
 
 [ESlint](http://eslint.org/)
 
