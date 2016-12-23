@@ -74,7 +74,7 @@ ServerName localhost:80
 $ cd ~/Projetos/php/www
 $ echo "<h1>My User Web Root</h1>" > index.html
 $ sudo apachectl -k restart
-$ brew install php70 --with-apache
+$ brew install php70 --with-httpd24
 $ brew services start homebrew/php/php70
 $ subl /usr/local/etc/apache2/2.4/httpd.conf
 
