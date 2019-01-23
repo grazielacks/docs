@@ -1,5 +1,9 @@
 # Configuração de Ambiente de Trabalho
 
+## Editor de Texto
+
+* [Visual Studio Code](https://code.visualstudio.com/)
+
 ## Dependências
 
 ### OS
