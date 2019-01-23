@@ -6,7 +6,14 @@
 
 ## Terminal
 
-* [Zsh](https://ohmyz.sh/): Functions, helpers, plugins, themes
+* [Zsh](https://ohmyz.sh/)
+Functions, helpers, plugins, themes
+
+## Dependências
+
+* [Docker](https://docs.docker.com/install/)
+* [Docker Compose](https://docs.docker.com/compose/install/)
+
 
 
 
