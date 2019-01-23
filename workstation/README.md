@@ -4,6 +4,13 @@
 
 * [Visual Studio Code](https://code.visualstudio.com/)
 
+## Terminal
+
+* [Zsh](https://ohmyz.sh/): Functions, helpers, plugins, themes
+
+
+
+
 ## Dependências
 
 ### OS
