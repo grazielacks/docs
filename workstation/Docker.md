@@ -51,7 +51,7 @@ Apagar container (se você não for usar seu container é uma boa prática que v
 
 ### Rails + Docker
 
-Crie seu projeto Rails rodando:
+Crie seu projeto Rails:
 
     docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/src/app rails rails new --skip-bundle nome_do_app
 
@@ -81,3 +81,97 @@ Depois disso podemos pegar a imagem que geramos e criar nosso container para sub
     
     docker run -v "$PWD":/usr/src/app -t -p 3000:3000 nome_do_app
     
+Pronto \o/, agora acesse no seu Browser http://localhost:3000/notices.
+
+
+### Rails + docker-compose
+
+Crie seu projeto Rails:
+
+    docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/src/app rails rails new --skip-bundle nome_do_app --database=postgresql
+    
+Agora entre no diretório via console e crie um file chama “Dockerfile” e substitua o conteúdo dele por:
+
+    FROM ruby:2.3-slim
+    # Instala as nossas dependencias
+    RUN apt-get update && apt-get install -qq -y --no-install-recommends \
+          build-essential nodejs libpq-dev
+    # Seta nosso path
+    ENV INSTALL_PATH /usr/src/app
+    # Cria nosso diretório
+    RUN mkdir -p $INSTALL_PATH
+    # Seta o nosso path como o diretório principal
+    WORKDIR $INSTALL_PATH
+    # Copia o nosso Gemfile para dentro do container
+    COPY Gemfile ./
+    # Instala as Gems
+    RUN bundle install
+    # Copia nosso código para dentro do container
+    COPY . .
+    # Roda nosso servidor
+    CMD puma -C config/puma.rb
+    
+Crie um arquivo chamado “docker-compose.yml” e coloque nele:
+
+    version: '2'
+
+    services:
+      postgres:
+        image: 'postgres:9.5'
+        volumes:
+          - 'postgres:/var/lib/postgresql/data'
+
+      website:
+        depends_on:
+          - 'postgres'
+        build: .
+        ports:
+          - '3000:3000'
+        volumes:
+          - '.:/usr/src/app'
+
+    volumes:
+      postgres:
+      
+Para fazer o Build de todos os nossos containers basta rodar (dentro do projeto):
+
+    docker-compose build
+    
+Atualize seu arquivo config/database.yml colocando nele:
+
+    default: &default
+      adapter: postgresql
+      encoding: unicode
+      pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+      host: postgres
+      user: postgres
+
+    development:
+      <<: *default
+      database: db_development
+
+    test:
+      <<: *default
+      database: db_test
+
+    production:
+      <<: *default
+      database: db_production
+      
+Para criar o banco de dados dentro do PostgreSQL rode:
+
+    docker-compose run website rake db:create
+    
+Gere o seguinte scaffold notice:
+
+    docker-compose run --rm website rails g scaffold notice title:string body:text
+    
+Rode as migrations:
+
+    docker-compose run --rm website rake db:migrate
+    
+Para subir nossos containers, rode no console:
+
+    docker-compose up
+    
+Pronto \o/, agora acesse no seu Browser http://localhost:3000
