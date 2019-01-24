@@ -116,14 +116,14 @@ Crie um arquivo chamado “docker-compose.yml” e coloque nele:
     version: '2'
 
     services:
-      postgres:
+      db:
         image: 'postgres:9.5'
         volumes:
           - 'postgres:/var/lib/postgresql/data'
 
-      website:
+      app:
         depends_on:
-          - 'postgres'
+          - 'db'
         build: .
         ports:
           - '3000:3000'
@@ -160,15 +160,15 @@ Atualize seu arquivo config/database.yml colocando nele:
       
 Para criar o banco de dados dentro do PostgreSQL rode:
 
-    docker-compose run website rake db:create
+    docker-compose run app rake db:create
     
 Gere o seguinte scaffold notice:
 
-    docker-compose run --rm website rails g scaffold notice title:string body:text
+    docker-compose run --rm app rails g scaffold notice title:string body:text
     
 Rode as migrations:
 
-    docker-compose run --rm website rake db:migrate
+    docker-compose run --rm app rake db:migrate
     
 Para subir nossos containers, rode no console:
 
