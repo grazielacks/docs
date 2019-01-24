@@ -143,7 +143,7 @@ Atualize seu arquivo config/database.yml colocando nele:
       adapter: postgresql
       encoding: unicode
       pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-      host: postgres
+      host: db
       user: postgres
 
     development:
@@ -160,7 +160,7 @@ Atualize seu arquivo config/database.yml colocando nele:
       
 Para criar o banco de dados dentro do PostgreSQL rode:
 
-    docker-compose run app rake db:create
+    docker-compose run --rm app rake db:create
     
 Gere o seguinte scaffold notice:
 
