@@ -47,4 +47,37 @@ Parar um container:
 Apagar container (se você não for usar seu container é uma boa prática que você apague ele para liberar memória):
     
     docker rm id_do_seu_container
+
+
+### Rails + Docker
+
+Crie seu projeto Rails rodando:
+
+    docker run -it --rm --user "$(id -u):$(id -g)" -v "$PWD":/usr/src/app -w /usr/src/app rails rails new --skip-bundle nome_do_app
+
+_Vai utilizar uma imagem rails para criar o container_
+
+_Local onde o app vai ficar no container: /usr/src/app_
+
+_Evitar criar os arquivos como root: --user "$(id -u):$(id -g)"_
+
+Agora que criamos nosso Dockerfile podemos fazer o Build da nossa imagem (Construir nossa imagem personalizada), dentro da pasta do seu projeto rode:
+
+    docker build -t nome_do_app .
+
+Para criar o banco de dados:
+
+    docker run -v "$PWD":/usr/src/app nome_do_app rails db:create
+    
+Para gerar um scaffold simples:
+
+    docker run -v "$PWD":/usr/src/app nome_do_app rails g scaffold notice title:text body:text
+    
+Para rodar as migrations:
+
+    docker run -v "$PWD":/usr/src/app nome_do_app rails db:migrate
+    
+Depois disso podemos pegar a imagem que geramos e criar nosso container para subir nossa aplicação:
+    
+    docker run -v "$PWD":/usr/src/app -t -p 3000:3000 nome_do_app
     
