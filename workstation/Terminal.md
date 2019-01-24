@@ -17,7 +17,14 @@ Definir no arquivo .zshrc
 
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     
-Definir no arquivo .zshrc
+Definir no ~/.zshrc
 
-    plugins=(zsh-autosuggestions)
+    plugins=(... zsh-autosuggestions)
 
+## Instalar o plugin [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting):
+    
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    
+Definir no ~/.zshrc
+    
+    plugins=(... zsh-syntax-highlighting)
