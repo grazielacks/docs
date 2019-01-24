@@ -48,6 +48,10 @@ Apagar container (se você não for usar seu container é uma boa prática que v
     
     docker rm id_do_seu_container
 
+Listar imagens
+
+    docker image ls
+
 
 ### Rails + Docker
 
@@ -175,3 +179,8 @@ Para subir nossos containers, rode no console:
     docker-compose up
     
 Pronto \o/, agora acesse no seu Browser http://localhost:3000
+
+Você pode derrubar tudo, removendo os containers completamente, com o comando para baixo:
+
+    docker-compose down --volumes
+
