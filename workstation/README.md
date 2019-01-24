@@ -1,16 +1,11 @@
 # Configuração de Ambiente de Trabalho
 
-## Editor de Texto
-
-* [Visual Studio Code](https://code.visualstudio.com/)
-
-## Terminal
-
-* [Zsh](https://ohmyz.sh/): Functions, helpers, plugins, themes
-
-## Dependências
-
+- [Terminal](Terminal.md)
+- [Editor de Texto](Editor.md)
 - [Docker + Docker Compose](Docker.md)
+
+
+
 
 
 
