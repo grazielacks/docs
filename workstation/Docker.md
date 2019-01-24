@@ -20,14 +20,14 @@ _Substituir **LAST.VERSION.NUMBER** pela ultima versão que tiver no site._
 
 ## Comandos
 
+Criar container através da imagem padrão do ubuntu:
+
+    docker run -t -i ubuntu /bin/bash
+
 Exibir os containers que estão em execução:
 
     docker ps
 
-Parar um container:
-
-    docker stop id_do_seu_container
-    
 Exibir todos containers que estão em execução e parados:
 
     docker ps -a
@@ -35,6 +35,14 @@ Exibir todos containers que estão em execução e parados:
 Iniciar um container:
 
     docker start id_do_seu_container
+
+Ir para o bash do container:
+
+    docker exec -it id_do_seu_container bash
+
+Parar um container:
+
+    docker stop id_do_seu_container
 
 Apagar container (se você não for usar seu container é uma boa prática que você apague ele para liberar memória):
     
