@@ -14,6 +14,8 @@
 
 ## Dependências
 
+    sudo apt install zsh git curl
+
 ### OS
 
 [brew.sh](http://brew.sh/)
