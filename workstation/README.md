@@ -115,6 +115,22 @@ $ sudo apt-get update
 $ sudo apt-get install php7.0 php7.0-mysql php7.0-pgsql
 ```
 
+First, make sure you have the following package installed so you can add repositories:
+
+apt-get install software-properties-common
+Next, add the PHP repository from Ondřej:
+
+add-apt-repository ppa:ondrej/php
+And finally, update your package list:
+
+apt-get update
+Install PHP 7.3
+After you’ve added the repository, you can install PHP 7.3 with the following command:
+
+apt-get install php7.3
+
+apt-get install php-pear php7.3-curl php7.3-dev php7.3-gd php7.3-mbstring php7.3-zip php7.3-mysql php7.3-xml
+
 ## Composer
 
 [composer](https://getcomposer.org/download/)
