@@ -250,26 +250,25 @@ Package Control - ctrl+shift+p (Win, Linux) ou cmd+shift+p (OS X). Install Packa
 ## Git
 
 ```sh
-$ git config --global user.name "YOUR NAME"
-$ git config --global user.email "YOUR@EMAIL.com"
-$ git config --global color.ui true
-$ git config --global color.status auto
-$ git config --global color.branch auto
-$ git config --global color.interactive auto
-$ git config --global color.diff auto
-$ git config --global color.grep auto
-$ git config --global core.editor subl  // "mate -w"
-$ git config --global alias.co checkout
-$ git config --global alias.br branch
-$ git config --global alias.ci commit
-$ git config --global alias.st status
-$ git config --global alias.unstage 'reset --hard HEAD~1'
-$ git config --global alias.last 'log -1 HEAD'
-$ git config --global alias.visual "!gitk"
-$ git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
-$ git config --global alias.type 'cat-file -t'
-$ git config --global alias.dump 'cat-file -p'
-$ git config --global push.default simple
+git config --global user.name "Elton Luis Kolling"
+git config --global user.email "eltonlk@gmail.com"
+git config --global color.ui true
+git config --global color.status auto
+git config --global color.branch auto
+git config --global color.interactive auto
+git config --global color.diff auto
+git config --global color.grep auto
+git config --global core.editor subl  // "mate -w"
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.unstage 'reset --hard HEAD~1'
+git config --global alias.last 'log -1 HEAD'
+git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+git config --global alias.type 'cat-file -t'
+git config --global alias.dump 'cat-file -p'
+git config --global push.default simple
 ```
 
 [gitignore](gitignore.txt)
