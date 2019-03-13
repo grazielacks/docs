@@ -1,5 +1,15 @@
 # Configuração de Ambiente de Trabalho
 
+## Dependências
+
+Ubuntu
+
+```sh
+sudo apt install zsh git curl git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev libgdbm-dev libncurses5-dev automake libtool bison libffi-dev software-properties-common
+```
+
+## Outros
+
 - [Terminal](Terminal.md)
 - [Editor de Texto](Editor.md)
 - [Docker + Docker Compose](Docker.md)
@@ -8,13 +18,6 @@
 
 
 
-
-
-
-
-## Dependências
-
-    sudo apt install zsh git curl git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
 
 ### OS
 
@@ -25,7 +28,7 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 $ brew install git && brew install bash-completion
 ```
 
-### Ubuntu
+### 
 
 ```sh
 $ sudo apt-get update
