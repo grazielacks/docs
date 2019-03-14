@@ -262,6 +262,7 @@ git config --global color.interactive auto
 git config --global color.diff auto
 git config --global color.grep auto
 git config --global core.editor subl  // "mate -w"
+git config --global core.pager ''
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
