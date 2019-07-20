@@ -7,7 +7,7 @@ Em "Ativar e Remover Recusos" deve ativar as opções:
 - Subsistema do Windows para Linux (Microsoft Subsystem for Linux)
 - Plataforma de Máquina Virtual (Virtual Machine Platform)
 
-Em seguida deve instalar o Ubuntu no Microsof Store.
+Em seguida deve instalar o Ubuntu e o Windows Terminal no Microsof Store .
 
 ## Dependências
 
