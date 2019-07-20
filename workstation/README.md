@@ -9,6 +9,18 @@ Em "Ativar e Remover Recusos" deve ativar as opções:
 
 Em seguida deve instalar o Ubuntu e o Windows Terminal no Microsof Store .
 
+Instalar Fontes Powerline no Windows, abra o power shell como administrador.
+
+```sh
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.ps1
+cd ..
+rm -r -fo fonts
+```
+
+Definir nas configurações do windows ternimal para usuar a fonte "Roboto Mono for Powerline".
+
 ## Dependências
 
 Ubuntu
