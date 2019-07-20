@@ -46,3 +46,16 @@ Definir no ~/.zshrc
 ```sh
 plugins=(... zsh-syntax-highlighting)
 ```
+
+## Instalar o Color Theme [dircolors-solarized](https://github.com/seebi/dircolors-solarized):
+
+```sh
+curl https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.ansi-dark --output ~/.dircolors
+```
+
+Definir no final do arquivo ~/.zshrc
+
+```sh
+# load dircolors
+eval `dircolors ~/.dircolors`
+```
