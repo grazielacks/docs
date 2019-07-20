@@ -5,12 +5,17 @@
 Ubuntu
 
 ```sh
+sudo apt install build-essential
+```
+
+```sh
 sudo apt install zsh git curl git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev libgdbm-dev libncurses5-dev automake libtool bison libffi-dev software-properties-common libmysqlclient-dev
 ```
 
-## Outros
+## Diversos
 
 - [Terminal](Terminal.md)
+- [Git](Git.md)
 - [Editor de Texto](Editor.md)
 - [Docker + Docker Compose](Docker.md)
 
