@@ -22,4 +22,7 @@ git config --global alias.st status
 git config --global alias.unstage 'reset --hard HEAD~1'
 git config --global alias.last 'log -1 HEAD'
 git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+
+# No WSL
+git config --global core.autocrlf input
 ```
