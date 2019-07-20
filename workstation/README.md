@@ -18,7 +18,7 @@ sudo apt install build-essential
 ```
 
 ```sh
-sudo apt install zsh git curl git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev libgdbm-dev libncurses5-dev automake libtool bison libffi-dev software-properties-common libmysqlclient-dev
+sudo apt install curl curl zlib1g-dev libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev libgdbm-dev libncurses5-dev automake libtool bison libffi-dev software-properties-common libmysqlclient-dev
 ```
 
 ## Diversos
@@ -263,29 +263,6 @@ Package Control - ctrl+shift+p (Win, Linux) ou cmd+shift+p (OS X). Install Packa
 * **FileDiffs:** Mostra as diferenças entre arquivos.
 
 ## Git
-
-```sh
-git config --global user.name "Elton Luis Kolling"
-git config --global user.email "eltonlk@gmail.com"
-git config --global color.ui true
-git config --global color.status auto
-git config --global color.branch auto
-git config --global color.interactive auto
-git config --global color.diff auto
-git config --global color.grep auto
-git config --global core.editor subl  // "mate -w"
-git config --global core.pager ''
-git config --global alias.co checkout
-git config --global alias.br branch
-git config --global alias.ci commit
-git config --global alias.st status
-git config --global alias.unstage 'reset --hard HEAD~1'
-git config --global alias.last 'log -1 HEAD'
-git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
-git config --global alias.type 'cat-file -t'
-git config --global alias.dump 'cat-file -p'
-git config --global push.default simple
-```
 
 [gitignore](gitignore.txt)
 
