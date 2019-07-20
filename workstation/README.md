@@ -1,5 +1,14 @@
 # Configuração de Ambiente de Trabalho
 
+## WSL 2
+Em "Ativar e Remover Recusos" deve ativar as opções:
+
+- Hyper-V 
+- Subsistema do Windows para Linux (Microsoft Subsystem for Linux)
+- Plataforma de Máquina Virtual (Virtual Machine Platform)
+
+Em seguida deve instalar o Ubuntu no Microsof Store.
+
 ## Dependências
 
 Ubuntu
