@@ -9,11 +9,7 @@
 Ubuntu
 
 ```sh
-sudo apt install build-essential
-```
-
-```sh
-sudo apt install curl curl zlib1g-dev libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev libgdbm-dev libncurses5-dev automake libtool bison libffi-dev software-properties-common libmysqlclient-dev
+sudo apt install build-essential gnupg2
 ```
 
 ## Diversos
@@ -23,34 +19,13 @@ sudo apt install curl curl zlib1g-dev libssl-dev libreadline-dev libyaml-dev lib
 - [Editor de Texto](Editor.md)
 - [Docker + Docker Compose](Docker.md)
 
-
-
-
-
-
-### OS
-
-[brew.sh](http://brew.sh/)
-
-```sh
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-$ brew install git && brew install bash-completion
-```
-
-### 
-
-```sh
-$ sudo apt-get update
-$ sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev libgdbm-dev libncurses5-dev automake libtool bison libffi-dev python-software-properties software-properties-common
-```
-
 ## RVM - Ruby
 
 [rvm.io](https://rvm.io/)
 
 ```sh
-$ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-$ \curl -sSL https://get.rvm.io | bash -s stable
+gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+\curl -sSL https://get.rvm.io | bash -s stable
 ```
 
 ## NVM - Node
@@ -240,4 +215,26 @@ Copie a chave gerada e coloque onde for usar, [github](http://github.com/), [bit
 ```sh
 $ brew install redis
 $ brew services start redis
+```
+
+
+
+```sh
+sudo apt install curl curl zlib1g-dev libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev libgdbm-dev libncurses5-dev automake libtool bison libffi-dev software-properties-common libmysqlclient-dev
+```
+
+### OS
+
+[brew.sh](http://brew.sh/)
+
+```sh
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ brew install git && brew install bash-completion
+```
+
+### 
+
+```sh
+$ sudo apt-get update
+$ sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev libgdbm-dev libncurses5-dev automake libtool bison libffi-dev python-software-properties software-properties-common
 ```
