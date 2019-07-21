@@ -20,3 +20,9 @@ Set-ExecutionPolicy Default
 ```
 
 Definir nas configurações do windows ternimal para usuar a fonte "Roboto Mono for Powerline".
+
+Converter a distro Ubuntu do wsl para wsl 2
+
+```sh
+wsl --set-version Ubuntu 2
+```
