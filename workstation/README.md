@@ -224,43 +224,6 @@ $ createdb $USER
 [sequelPro](https://www.sequelpro.com/)
 [slack](https://slack.com/)
 
-## Editores
-
-### Sublime Text
-
-[www.sublimetext.com](https://www.sublimetext.com/)
-
-#### OS
-Para criar o comando para o terminal
-```sh
-$ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
-```
-
-[Settings](sublime_text.txt)
-
-#### Pacotes
-Package Control - ctrl+shift+p (Win, Linux) ou cmd+shift+p (OS X). Install Package.
-
-* **SideBarEnhancements:**  O sidebar do Sublime é simples, com este pacote você libera uma infinidade de opções como: abrir, apagar, renomear, copiar, colar, procurar em arquivo, move, atualizar, etc.
-* **OpenFolder:** Este pacote adiciona a possibildade de abrir uma pasta a partir do sidebar, você dá com o botão direito em cima da pasta escolhe Open  Folder e a pasta é aberta.
-* **HTML5:** Suporte ao HTML5.
-* **HTMLAttibutes:** Suporte para os atributos em HTML para completar de maneira automática.
-* **BracketHighlighter:** Este é para destacar a abertura e fechamento de tags, chaves, parênteses, etc.
-* **ColorPicker:** Este é bem legal, abre uma paleta de cores. No linux e windows para utilizar pressione ctrl+shift+c no MacOS cmd+shift+c.
-* **jslint:** Controle de qualidade de código para o javascript.
-* **DetectSyntax:** Detecta a sintaxe de arquivos como Gemfile, Capfile, etc. Também detecta arquivos do RSpec.
-* **ColorHighlighter:** Ele inspeciona os valores de cores hexadecimais selecionados.
-* **Sass:** Suporte ao Sass.
-* **CSS3:** Esse plugin serve para manter uma boa organização no CSS.
-* **JavaScriptNext:** Este é um pacote de sintaxe melhorada para JavaScript. Inclui novos recursos de ECMAScript 6.
-* **PHPCS:** Mantem o padrão no código PHP.
-* **Aligntab:** Ajuda a organizar os códigos, mantendo a padronização na identação.
-* **FileDiffs:** Mostra as diferenças entre arquivos.
-
-## Git
-
-[gitignore](gitignore.txt)
-
 ## SSH
 
 ```sh
@@ -278,10 +241,3 @@ Copie a chave gerada e coloque onde for usar, [github](http://github.com/), [bit
 $ brew install redis
 $ brew services start redis
 ```
-
-## Arquivos
-
-[bash_profile](bash_profile.txt)
-
-## Outros
-
