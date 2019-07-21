@@ -72,56 +72,17 @@ php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
 ```
 
-## Programas
-
-### OS
-
-[pgAdmin](https://www.pgadmin.org/)
-[sequelPro](https://www.sequelpro.com/)
-[slack](https://slack.com/)
-
-### Ubuntu
-
-[pgAdmin](https://www.pgadmin.org/)
-[sequelPro](https://www.sequelpro.com/)
-[slack](https://slack.com/)
-
 ## SSH
 
 ```sh
-$ ssh-keygen -t rsa -C "YOUR@EMAIL.com"
-$ cat ~/.ssh/id_rsa.pub
+ssh-keygen -t rsa -C "eltonlk@gmail.com"
+cat ~/.ssh/id_rsa.pub
 ```
 
 Copie a chave gerada e coloque onde for usar, [github](http://github.com/), [bitbucket](http://bitbucket.com/), etc.
 
-## Redis
-
-### OS
+##
 
 ```sh
-$ brew install redis
-$ brew services start redis
-```
-
-
-
-```sh
-sudo apt install curl curl zlib1g-dev libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev libgdbm-dev libncurses5-dev automake libtool bison libffi-dev software-properties-common libmysqlclient-dev
-```
-
-### OS
-
-[brew.sh](http://brew.sh/)
-
-```sh
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-$ brew install git && brew install bash-completion
-```
-
-### 
-
-```sh
-$ sudo apt-get update
-$ sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev libgdbm-dev libncurses5-dev automake libtool bison libffi-dev python-software-properties software-properties-common
+sudo apt-get install zlib1g-dev libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev libgdbm-dev libncurses5-dev automake libtool bison libffi-dev python-software-properties libmysqlclient-dev
 ```
