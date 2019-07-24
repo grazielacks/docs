@@ -57,9 +57,9 @@ nvm install node
 ## PHP + Composer
 
 ```sh
-$ sudo add-apt-repository ppa:ondrej/php
-$ sudo apt-get update
-$ sudo apt-get install php7.3 php7.3-fpm php7.3-sqlite php7.3-mbstring php7.3-curl
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
+sudo apt-get install php7.3 php7.3-fpm php7.3-sqlite php7.3-mbstring php7.3-curl php7.3-xml 
 ```
 
 [composer](https://getcomposer.org/download/)
