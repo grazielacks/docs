@@ -72,6 +72,12 @@ php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
 ```
 
+Adicionar no arquivo .zlogin.
+
+```sh
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+```
+
 ## YARN
 
 ```sh
