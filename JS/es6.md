@@ -1,5 +1,52 @@
 # JS - ES6
 
+## Variáveis
+
+    cons foo = 'Teste'; // não pode ser atribuido o valor na variavel, somente nas propriedades quando for um objeto
+    let foo2 = 'Teste 2'; // não pode ser declarado mais de uma vez no mesmo escopo
+    var foo3 = 'Teste 3'; // tentar não utilizar mais
+
+## String
+    
+    let foo = 'Interpolação de strings';
+    
+    let text = `
+    linha 1
+    ${foo}
+    linha 2
+    linha 3
+    `;
+    
+
+## For
+
+    let array = [1,2,3,4];
+    let obj = {
+        first_name: 'Elton',
+        last_name: 'Kolling'
+    };
+    
+    for(let i in array) {
+        console.log(i, array[i]);
+    }
+    
+    for(let obj of array) {
+        console.log(obj);
+    }
+    
+    for(let [index, obj] of array.entries()) {
+        console.log(index, obj);
+    }
+    
+    for(let i in obj) {
+        console.log(i, obj[i]);
+    }
+    
+    for(let i of Object.keys(obj)) {
+        console.log(i, obj[i]);
+    }
+
+
 ## Arrow Functions
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 
@@ -81,6 +128,45 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects
     //ex: "RS 2.000,23"
   
 
+## Rest parameters
+
+    function funcao(param1, param2, ...otherParams) {
+        console.log(otherParams);
+    }
+    
+    funcao(1,2,3,4,5,6);
+    //ex: "(4) [3,4,5,6]"
+
+    let array1 = [1,2,3,4];
+    let array2 = [5,6,7,8,...array1];
+    
+    console.log(array2);
+    //ex: [5,6,7,8,1,2,3,4]
+    
+    let string = 'Elton Luis';
+    let stringArray = [...string];
+    
+    console.log(stringArray);
+    //ex: ['E', 'l', 't', 'o', 'n', ' ', 'L', 'u', 'i', 's'];
 
 
+## Property shortland
 
+    let first_name = 'Elton',
+        last_name = 'Kolling';
+    
+    let obj = {
+        first_name,
+        last_name,
+        method(param1, param2) {
+        }        
+    };
+    
+    function funcao({first_name, last_name}) {
+        console.log(first_name, last_name);
+    }
+    
+    funcao(obj);
+    //ex: "Elton Kolling"
+    
+    
