@@ -44,6 +44,7 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes
 
     const quadrado = new Retangulo(10, 10);
     console.log(quadrado.area);
+    console.log(Retangulo.distancia(10, 20));
   
 
 ## Trabalhando com datas
